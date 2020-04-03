@@ -1,0 +1,20 @@
+
+# Parameters for the example pipeline. Feel free to delete these once you
+# remove the example pipeline from pipeline.py and the example nodes in
+# `src/pipelines/`
+train_test_split_ratio: 0.1
+example_test_data_ratio: 0.2
+example_num_train_iter: 10000
+example_learning_rate: 0.01
+columns_to_be_extracted:
+  - "CRIM"
+  - "INDUS"
+  - "NOX"
+  - "RM"
+  - "AGE"
+  - "DIS"
+  - "TAX"
+  - "PTRATIO"
+  - "B"
+  - "LSTAT"
+  - "MEDV"
