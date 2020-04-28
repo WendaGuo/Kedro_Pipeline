@@ -37,6 +37,9 @@ import pandas as pd
 
 
 def delete_col(data: pd.DataFrame, cols: List[str]) -> pd.DataFrame:
+    """
+    To delete some columns from raw data set
+    """
     del data[cols]
     return data
 
