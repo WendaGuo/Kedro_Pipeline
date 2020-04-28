@@ -36,6 +36,11 @@ from typing import Any, Dict, List
 import pandas as pd
 
 
+def delete_col(data: pd.DataFrame, cols: List[str]) -> pd.DataFrame:
+    del data[cols]
+    return data
+
+
 def reScaling(data: pd.DataFrame, columns_to_be_extracted: List[str]) -> pd.DataFrame:
     """
     extract target columns from raw data set, normalize features by (X-mean(X))/std(X), and shuffle the DataFrame.
