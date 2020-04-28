@@ -35,6 +35,12 @@ from typing import Any, Dict, List
 
 import pandas as pd
 
+def empty_func() -> None:
+    """
+    A function that does nothing
+    """
+    pass
+
 
 def delete_col(data: pd.DataFrame, cols: List[str]) -> pd.DataFrame:
     """
